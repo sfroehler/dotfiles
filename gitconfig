@@ -1,0 +1,32 @@
+[user]
+  name = Simon Fröhler
+  email = simon@webionate.de
+[core]
+  excludesfile = /Users/sfroehler/.gitignore_global
+	editor = atom --wait
+[credential]
+  helper = osxkeychain
+[apply]
+  whitespace = warn
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = auto
+[help]
+  autocorrect = 1
+[status]
+  submodule = 1
+[push]
+  # Only push branches that have been set up to track a remote branch.
+  default = current
+[alias]
+  aa = add --all
+  ap = add --patch
+  ca = commit --amend
+  ci = commit -v
+  co = checkout
+  pr = !gh pull-request
+  st = status
+[fetch]
+  prune = true

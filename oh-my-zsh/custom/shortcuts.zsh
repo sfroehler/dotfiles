@@ -1,0 +1,11 @@
+buddy=/Users/sfroehler/code/projects/buddy
+photobuddy=/Users/sfroehler/code/projects/photobuddy
+code=/Users/sfroehler/code
+projects=/Users/sfroehler/code/projects
+stellwerk=/Users/sfroehler/code/projects/stellwerk
+uhrmensch=/Users/sfroehler/code/projects/uhrmensch
+demavet=/Users/sfroehler/code/projects/demavet
+catalog_portal=/Users/sfroehler/code/projects/bmd/hagebau-portal
+houston=/Users/sfroehler/code/projects/houston
+spree_foundation=/Users/sfroehler/code/projects/spree_foundation
+shipcloud=/Users/sfroehler/code/projects/shipcloud
