@@ -65,3 +65,5 @@ alias rs='bundled_rspec'
 alias test_dog="dog log/test.log"
 alias dev_dog="dog log/development.log"
 # alias s="rspec"
+
+alias dotfiles='atom ~/.dotfiles'
