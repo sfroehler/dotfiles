@@ -26,6 +26,8 @@
   ca = commit --amend
   ci = commit -v
   co = checkout
+  delete-branch = !sh -c 'git push origin :refs/heads/$1 && git branch -D $1' -
+  merge-branch = !git checkout master && git merge @{-1}
   pr = !gh pull-request
   st = status
 [fetch]
