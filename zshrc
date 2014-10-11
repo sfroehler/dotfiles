@@ -45,7 +45,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx atom git gitignore github ruby rails rake textmate cap bundler brew gem mysql vagrant nyan pow powder zsh-syntax-highlighting lol zeus postgres encode64)
+plugins=(osx atom git gitignore github ruby rails rake cap bundler brew gem vagrant pow powder zsh-syntax-highlighting lol zeus postgres encode64)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,3 +82,6 @@ export PATH="$PATH:/usr/local/lib/node_modules"
 source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh --no-rehash)"
+
+setopt auto_cd
+cdpath=($HOME/code)
