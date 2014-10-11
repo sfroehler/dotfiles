@@ -2,8 +2,9 @@
   name = Simon Fröhler
   email = simon@webionate.de
 [core]
-  excludesfile = /Users/sfroehler/.gitignore_global
-	editor = atom --wait
+  excludesfile = ~/.gitignore_global
+  editor = atom --wait
+  autocrlf = input
 [credential]
   helper = osxkeychain
 [apply]
@@ -32,3 +33,7 @@
   st = status
 [fetch]
   prune = true
+[commit]
+  template = ~/.gitmessage
+[merge]
+  ff = only
