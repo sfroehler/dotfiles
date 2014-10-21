@@ -50,7 +50,7 @@ alias dog="tail -f"
 alias sca="code/projects/shipcloud/app"
 alias scm="code/projects/shipcloud/marketing"
 
-#Rails
+# Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias m="migrate"
 alias rk="rake"
@@ -66,4 +66,8 @@ alias test_dog="dog log/test.log"
 alias dev_dog="dog log/development.log"
 # alias s="rspec"
 
-alias dotfiles='atom ~/.dotfiles'
+# rbenv
+alias update_rbenv="cd ~/.rbenv && git pull"
+
+# other
+alias dotfiles="cd ~/.dotfiles && $EDITOR ."
