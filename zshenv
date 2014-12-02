@@ -10,7 +10,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 # load rbenv if available
 if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
+  eval "$(rbenv init - zsh --no-rehash)"
 fi
 
 # mkdir .git/safe in the root of repositories you trust
