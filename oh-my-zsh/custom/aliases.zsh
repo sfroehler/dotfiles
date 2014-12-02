@@ -66,8 +66,8 @@ alias test_dog="dog log/test.log"
 alias dev_dog="dog log/development.log"
 # alias s="rspec"
 
-# rbenv
-alias update_rbenv="cd ~/.rbenv && git pull"
+# homebrew
+alias buu="brew update && brew upgrade"
 
 # other
 alias dotfiles="cd ~/.dotfiles && $EDITOR ."
