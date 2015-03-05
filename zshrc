@@ -73,9 +73,8 @@ cdpath=($HOME/code)
 #awscli auto completion
 source /usr/local/share/zsh/site-functions/_aws
 
-# hombrew nvm (Node Version Manager) installation
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
 # load server_aliases
 [[ -f ~/.server_aliases ]] && source ~/.server_aliases
+
+# load private environment variables
+[[ -f ~/.private_env_variables ]] && source ~/.private_env_variables
