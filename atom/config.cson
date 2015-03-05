@@ -1,27 +1,31 @@
-'global':
-  'editor':
-    'fontSize': 18
-    'showIndentGuide': true
-    'showInvisibles': true
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'xml-formatter'
-      'vim-mode'
-      'linter-ruby'
+"*":
+  editor:
+    fontSize: 18
+    showInvisibles: true
+    showIndentGuide: true
+    invisibles: {}
+  core:
+    disabledPackages: [
+      "xml-formatter"
+      "vim-mode"
+      "linter-ruby"
     ]
-  'exception-reporting':
-    'userId': '82bed1e2-8d6b-a3d8-f1d6-93a436be63a1'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': 'b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad'
-  'linter-rubocop':
-    'rubocopExecutablePath': '/Users/sfroehler/.rbenv/shims/'
-  'atom-beautify':
-    '_analyticsUserId': 'b9696365-d8ed-4a5c-9a5a-49ef3088e6f0'
-  'linter-ruby':
-    'rubyExecutablePath': '/Users/sfroehler/.rbenv/shims/'
-  'linter':
-    'lintOnChange': false
-    'lintOnEditorFocus': false
+  "exception-reporting":
+    userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
+  "linter-rubocop":
+    rubocopExecutablePath: "/Users/sfroehler/.rbenv/shims/"
+  "atom-beautify":
+    _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
+  "linter-ruby":
+    rubyExecutablePath: "/Users/sfroehler/.rbenv/shims/"
+  linter:
+    lintOnChange: false
+    lintOnEditorFocus: false
+  rspec:
+    command: "bundle exec rspec"
+  "tree-view":
+    hideVcsIgnoredFiles: true
