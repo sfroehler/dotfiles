@@ -1,6 +1,6 @@
 [user]
   name = Simon Fröhler
-  email = simon@webionate.de
+  email = simon@shipcloud.io
 [core]
   excludesfile = ~/.gitignore_global
   editor = atom --wait
