@@ -1,15 +1,16 @@
 "*":
   editor:
-    fontSize: 18
     showInvisibles: true
     showIndentGuide: true
     invisibles: {}
+    preferredLineLength: 100
   core:
     disabledPackages: [
       "xml-formatter"
       "vim-mode"
       "linter-ruby"
     ]
+    projectHome: "~/code"
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
   welcome:
