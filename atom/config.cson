@@ -4,13 +4,20 @@
     showIndentGuide: true
     invisibles: {}
     preferredLineLength: 100
+    fontSize: 15
+    autoIndentOnPaste: false
   core:
     disabledPackages: [
       "xml-formatter"
       "vim-mode"
       "linter-ruby"
+      "ruby-string-interpolation"
     ]
     projectHome: "~/code"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
   welcome:
@@ -26,7 +33,10 @@
   linter:
     lintOnChange: false
     lintOnEditorFocus: false
+    subtleLinterErrors: [
+      "rubocop"
+    ]
   rspec:
     command: "bundle exec rspec"
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
+  coverage: {}
