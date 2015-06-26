@@ -75,6 +75,9 @@ cdpath=($HOME/code)
 #awscli auto completion
 source /usr/local/share/zsh/site-functions/_aws
 
+# load aliases
+source ~/.aliases.zsh
+
 # load server_aliases
 [[ -f ~/.server_aliases ]] && source ~/.server_aliases
 
