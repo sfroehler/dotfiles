@@ -40,3 +40,4 @@
     command: "bundle exec rspec"
   "tree-view": {}
   coverage: {}
+  minimap: {}
