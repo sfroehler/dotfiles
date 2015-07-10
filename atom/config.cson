@@ -10,8 +10,6 @@
     disabledPackages: [
       "xml-formatter"
       "vim-mode"
-      "linter-ruby"
-      "ruby-string-interpolation"
     ]
     projectHome: "~/code"
     themes: [
