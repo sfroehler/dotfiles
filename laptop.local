@@ -1,6 +1,7 @@
 #!/bin/sh
 
 brew install httpie
+brew install rbenv-default-gems
 
 brew tap caskroom/cask
 brew install brew-cask
