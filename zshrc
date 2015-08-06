@@ -83,3 +83,6 @@ source ~/.aliases.zsh
 
 # load private environment variables
 [[ -f ~/.private_env_variables ]] && source ~/.private_env_variables
+
+# added by travis gem
+[ -f /Users/sfroehler/.travis/travis.sh ] && source /Users/sfroehler/.travis/travis.sh
