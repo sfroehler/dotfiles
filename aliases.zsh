@@ -47,8 +47,8 @@ alias ohmyzsh="atom ~/.oh-my-zsh"
 alias tlf="tail -f"
 alias dog="tail -f"
 
-alias sca="code/projects/shipcloud/app"
-alias scm="code/projects/shipcloud/marketing"
+alias sca="code/shipcloud/app"
+alias scm="code/shipcloud/marketing"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
