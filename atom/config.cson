@@ -21,8 +21,7 @@
     showOnStartup: false
   metrics:
     userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
-  "linter-rubocop":
-    executablePath: "/Users/sfroehler/.rbenv/shims/"
+  "linter-rubocop": {}
   "atom-beautify":
     _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
   linter:
