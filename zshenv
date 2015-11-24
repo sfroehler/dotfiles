@@ -20,3 +20,9 @@ export PATH=".git/safe/../../bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export ZSHENV_PATH="$PATH"
+
+# Setup for Go
+# https://golang.org/doc/code.html#GOPATH
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bins

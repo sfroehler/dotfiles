@@ -86,3 +86,7 @@ source ~/.aliases.zsh
 
 # added by travis gem
 [ -f /Users/sfroehler/.travis/travis.sh ] && source /Users/sfroehler/.travis/travis.sh
+
+# nvm setup
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
