@@ -7,3 +7,6 @@ rubocop
 ruby-beautify
 hookup
 travis
+bundler-audit
+ruby-graphviz
+pry
