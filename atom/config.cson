@@ -7,13 +7,14 @@
     fontSize: 15
     autoIndentOnPaste: false
   core:
-    disabledPackages: [
-      "xml-formatter"
-    ]
     projectHome: "~/code"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
+    ]
+    disabledPackages: [
+      "vim-mode"
+      "linter-haml"
     ]
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
@@ -36,4 +37,5 @@
     command: "bundle exec rspec"
   "tree-view": {}
   coverage: {}
-  minimap: {}
+  "atom-terminal":
+    app: "iTerm"
