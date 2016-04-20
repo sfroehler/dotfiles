@@ -1,41 +1,48 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    invisibles: {}
-    preferredLineLength: 100
-    fontSize: 15
-    autoIndentOnPaste: false
+  "atom-beautify":
+    _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
+  "atom-ctags":
+    cmdArgs: "--exclude=app/assets --exclude=vendor --exclude=tmp --exclude=coverage --exclude=doc --exclude=gems --exclude=log --exclude=public"
+  "atom-terminal":
+    app: "iTerm"
   core:
+    disabledPackages: [
+      "vim-mode"
+      "linter-haml"
+      "symbols-view"
+    ]
     projectHome: "~/code"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
-    disabledPackages: [
-      "vim-mode"
-      "linter-haml"
-    ]
+  coverage: {}
+  "ctags-status": {}
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 100
+    showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
-  "linter-rubocop": {}
-  "atom-beautify":
-    _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
   linter:
     lintOnChange: false
     lintOnEditorFocus: false
+    showErrorPanel: false
+    showErrorTabFile: false
     subtleLinterErrors: [
       "rubocop"
     ]
-    showErrorTabFile: false
-    showErrorPanel: false
+  "linter-rubocop":
+    command: "rubocop --force-exclusion"
+  "markdown-preview":
+    breakOnSingleNewline: true
+  metrics:
+    userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
   rspec:
     command: "bundle exec rspec"
   "tree-view": {}
-  coverage: {}
-  "atom-terminal":
-    app: "iTerm"
+  welcome:
+    showOnStartup: false
