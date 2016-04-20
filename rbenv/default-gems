@@ -10,3 +10,4 @@ travis
 bundler-audit
 ruby-graphviz
 pry
+consistency_fail
