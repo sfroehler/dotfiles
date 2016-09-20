@@ -90,3 +90,5 @@ source ~/.aliases.zsh
 # nvm setup
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
