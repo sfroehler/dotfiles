@@ -1,23 +1,6 @@
 #!/bin/sh
 
-brew install ansible
-brew install httpie
-brew install rbenv-default-gems
-
-brew tap caskroom/cask
-brew install brew-cask
-
-brew_cask_install_or_upgrade 'dropbox'
-brew_cask_install_or_upgrade 'evernote'
-brew_cask_install_or_upgrade 'google-chrome'
-brew_cask_install_or_upgrade 'skype'
-brew_cask_install_or_upgrade 'spotify'
-brew_cask_install_or_upgrade 'the-unarchiver'
-brew_cask_install_or_upgrade 'torbrowser'
-brew_cask_install_or_upgrade 'vagrant'
-brew_cask_install_or_upgrade 'virtualbox'
-brew_cask_install_or_upgrade 'vlc'
-
+brew bundle
 
 # install xcode command line tools
 xcode-select --install
