@@ -1,6 +1,11 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
+    general:
+      _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
+    json:
+      indent_size: 2
+    xml:
+      indent_size: 2
   "atom-ctags":
     cmdArgs: "--exclude=app/assets --exclude=vendor --exclude=tmp --exclude=coverage --exclude=doc --exclude=gems --exclude=log --exclude=public"
   "atom-terminal":
@@ -20,11 +25,12 @@
   "ctags-status": {}
   editor:
     autoIndentOnPaste: false
-    fontSize: 15
+    fontSize: 19
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
+    softWrapHangingIndent: 100
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
   linter:
