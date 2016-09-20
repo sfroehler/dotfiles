@@ -69,5 +69,12 @@ alias dev_dog="dog log/development.log"
 # homebrew
 alias buu="brew update && brew upgrade"
 
+# rubygems
+alias geus="gem update --system"
+alias gu="gem update"
+
 # other
 alias dotfiles="cd ~/.dotfiles && $EDITOR ."
+
+# update homebrew, gems, ohmyzsh, ...
+alias update="buu && geus && gu && upgrade_oh_my_zsh"
