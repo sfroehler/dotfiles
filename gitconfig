@@ -1,7 +1,7 @@
 [user]
   name = Simon Fröhler
   email = sfroehler@gmail.com
-  signingkey = 566C748D
+  signingkey = 69F9A846A9D9FA45
 [core]
   excludesfile = ~/.gitignore_global
   editor = atom --wait

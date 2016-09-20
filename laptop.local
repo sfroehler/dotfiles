@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ -r "$HOME/.rcrc" ]; then
+  fancy_echo "Updating dotfiles ..."
+  rcup -v
+fi
+
 brew bundle
 
 # install xcode command line tools
