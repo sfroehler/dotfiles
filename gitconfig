@@ -45,4 +45,4 @@
   smudge = git-lfs smudge %f
   required = true
 [diff]
-  compactionHeuristic = true
+    indentHeuristic = true
