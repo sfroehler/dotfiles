@@ -11,12 +11,14 @@
   "atom-terminal":
     app: "iTerm"
   core:
+    allowPendingPaneItems: false
     disabledPackages: [
       "vim-mode"
       "linter-haml"
       "symbols-view"
     ]
     projectHome: "~/code"
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
@@ -25,7 +27,6 @@
   "ctags-status": {}
   editor:
     autoIndentOnPaste: false
-    fontSize: 19
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
