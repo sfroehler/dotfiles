@@ -92,3 +92,12 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Add ~/.rbenv/bin to your $PATH for access to the rbenv command-line utility.
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi

@@ -5,14 +5,6 @@ export EDITOR=$VISUAL
 # ensure dotfiles bin directory is loaded first
 export PATH="$HOME/.bin:/usr/local/bin:$PATH"
 
-# Add ~/.rbenv/bin to your $PATH for access to the rbenv command-line utility.
-export PATH="$HOME/.rbenv/bin:$PATH"
-
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - zsh --no-rehash)"
-fi
-
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
