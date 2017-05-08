@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 2.1
+  TargetRubyVersion: 2.3
   Exclude:
     - "vendor/**/*"
     - "db/schema.rb"
@@ -140,7 +140,7 @@ Style/TrailingCommaInArguments:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   Enabled: false
   EnforcedStyleForMultiline: comma
-  SupportedStyles:
+  SupportedStylesForMultiline:
   - comma
   - consistent_comma
   - no_comma
@@ -149,7 +149,7 @@ Style/TrailingCommaInLiteral:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
   Enabled: true
   EnforcedStyleForMultiline: comma
-  SupportedStyles:
+  SupportedStylesForMultiline:
   - comma
   - consistent_comma
   - no_comma
@@ -254,7 +254,7 @@ Lint/EachWithObjectArgument:
   Enabled: true
 Lint/EndAlignment:
   Description: This cop checks whether the end keywords are aligned properly.
-  AlignWith: variable
+  EnforcedStyleAlignWith: variable
   Enabled: true
 Lint/HandleExceptions:
   Description: Don't suppress exception.
