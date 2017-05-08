@@ -14,19 +14,15 @@
     allowPendingPaneItems: false
     disabledPackages: [
       "vim-mode"
-      "linter-haml"
       "symbols-view"
     ]
     projectHome: "~/code"
     telemetryConsent: "no"
-    themes: [
-      "atom-dark-ui"
-      "atom-dark-syntax"
-    ]
   coverage: {}
   "ctags-status": {}
   editor:
     autoIndentOnPaste: false
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -44,8 +40,10 @@
     ]
   "linter-rubocop":
     command: "rubocop --force-exclusion"
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
+    useGitHubStyle: true
   metrics:
     userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
   rspec:
