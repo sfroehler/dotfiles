@@ -1,28 +1,16 @@
 "*":
   "atom-beautify":
-    general:
-      _analyticsUserId: "b9696365-d8ed-4a5c-9a5a-49ef3088e6f0"
-    json:
-      indent_size: 2
-    xml:
-      indent_size: 2
-  "atom-ctags":
-    cmdArgs: "--exclude=app/assets --exclude=vendor --exclude=tmp --exclude=coverage --exclude=doc --exclude=gems --exclude=log --exclude=public"
-  "atom-terminal":
-    app: "iTerm"
+    json: {}
   core:
     allowPendingPaneItems: false
     disabledPackages: [
-      "vim-mode"
       "symbols-view"
     ]
     projectHome: "~/code"
     telemetryConsent: "no"
-  coverage: {}
-  "ctags-status": {}
   editor:
     autoIndentOnPaste: false
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -32,22 +20,9 @@
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
   linter:
     lintOnChange: false
-    lintOnEditorFocus: false
-    showErrorPanel: false
-    showErrorTabFile: false
-    subtleLinterErrors: [
-      "rubocop"
-    ]
   "linter-rubocop":
     command: "rubocop --force-exclusion"
-  "linter-ui-default": {}
-  "markdown-preview":
-    breakOnSingleNewline: true
-    useGitHubStyle: true
-  metrics:
-    userId: "b6a3c5c07d7a3ea6b3a3e5504f255bd228279aad"
-  rspec:
-    command: "bundle exec rspec"
-  "tree-view": {}
+  "linter-ui-default":
+    panelHeight: 69
   welcome:
     showOnStartup: false
