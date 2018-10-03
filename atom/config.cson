@@ -10,7 +10,7 @@
     telemetryConsent: "no"
   editor:
     autoIndentOnPaste: false
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -20,9 +20,11 @@
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
   linter:
     lintOnChange: false
+  "linter-haml":
+    executablePath: "atom.project.getPaths()[0] + \"bin/haml-lint\""
   "linter-rubocop":
-    command: "rubocop --force-exclusion"
-  "linter-ui-default":
-    panelHeight: 69
+    command: "bin/rubocop --force-exclusion"
+  "linter-ui-default": {}
+  "tree-view": {}
   welcome:
     showOnStartup: false
