@@ -1,8 +1,11 @@
 #!/bin/sh
 
 if [ -r "$HOME/.rcrc" ]; then
+  if [[ ! -d "~/.private-dotfiles" ]]; then
+    ln -s ~/Dropbox\ \(Privat\)/private-dotfiles .private-dotfiles
+  fi
   fancy_echo "Updating dotfiles ..."
-  rcup -v
+  rcup -v -d .dotfiles .private-dotfiles
 fi
 
 brew bundle

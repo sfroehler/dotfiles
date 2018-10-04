@@ -15,5 +15,6 @@ Uses [rcm](https://github.com/thoughtbot/rcm) to link the dotfiles.
 git clone git://github.com/sfroehler/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 brew bundle
-rcup
+cd ~
+rcup -v -d .dotfiles .private-dotfiles
 ```
