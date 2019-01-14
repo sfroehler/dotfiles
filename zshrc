@@ -47,7 +47,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx atom git gitignore github ruby rails rake cap bundler brew gem vagrant pow powder zsh-syntax-highlighting lol zeus postgres encode64)
+plugins=(osx asdf atom aws docker git gitignore github ruby rails rake cap bundler brew gem vagrant zsh-syntax-highlighting lol zeus postgres encode64)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,19 +88,23 @@ source ~/.aliases.zsh
 [ -f /Users/sfroehler/.travis/travis.sh ] && source /Users/sfroehler/.travis/travis.sh
 
 # nvm setup
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
+# export NVM_DIR=~/.nvm
+# source $(brew --prefix nvm)/nvm.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Add ~/.rbenv/bin to your $PATH for access to the rbenv command-line utility.
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
 
 
 # load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
+# if which rbenv &>/dev/null ; then
+#   eval "$(rbenv init - --no-rehash)"
+# fi
 
 export PATH="$HOME/.bin:$PATH"
-source /Users/sfroehler/.asdf/asdf.sh
+
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
+export PATH="$PATH:/Users/sfroehler/Qt5.5.0/5.5/clang_64/bin"

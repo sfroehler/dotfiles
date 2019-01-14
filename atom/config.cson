@@ -1,16 +1,22 @@
 "*":
   "atom-beautify":
     json: {}
+  "autocomplete-ruby":
+    rsensePath: "~/.asdf/shims/rsense"
   core:
     allowPendingPaneItems: false
     disabledPackages: [
       "symbols-view"
+      "language-gfm"
     ]
     projectHome: "~/code"
     telemetryConsent: "no"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
     autoIndentOnPaste: false
-    fontSize: 17
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -25,6 +31,14 @@
   "linter-rubocop":
     command: "bin/rubocop --force-exclusion"
   "linter-ui-default": {}
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "tree-view": {}
   welcome:
     showOnStartup: false
