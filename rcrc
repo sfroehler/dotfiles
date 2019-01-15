@@ -1,3 +1,4 @@
 # https://thoughtbot.github.io/rcm/rcrc.5.html
-EXCLUDES="README.md LICENSE Brewfile"
+EXCLUDES="README.md LICENSE"
 DOTFILES_DIRS=".dotfiles .private-dotfiles"
+UNDOTTED="Brewfile"

@@ -12,7 +12,6 @@ if [[ ! -d "~/.private-dotfiles" ]]; then
 fi
 rcup -v -d .dotfiles .private-dotfiles
 
-
 brew bundle
 
 # install xcode command line tools

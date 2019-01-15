@@ -17,7 +17,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "cloning dotfiles"
 git clone git://github.com/sfroehler/dotfiles ~/.dotfiles
-ln -s ~/.dotfiles/laptop.local ~/.laptop.local
+ln -sf ~/.dotfiles/laptop.local ~/.laptop.local
+ln -sf ~/.dotfiles/rcrc ~/.rcrc
 
 echo "Executing thoughtbot laptop script"
 curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
