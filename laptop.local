@@ -5,11 +5,12 @@ if [[ ! -d "${HOME}/.dotfiles" ]]; then
   git clone git@github.com:sfroehler/dotfiles.git "${HOME}/.dotfiles"
 fi
 
-
-fancy_echo "Updating dotfiles ..."
 if [[ ! -d "~/.private-dotfiles" ]]; then
-  ln -s ~/Dropbox\ \(Privat\)/private-dotfiles .private-dotfiles
+  fancy_echo "Creating symlink for private-dotfiles ..."
+  ln -s ~/Dropbox\ \(Privat\)/private-dotfiles ~/.private-dotfiles
 fi
+
+fancy_echo "Creating dotfiles ..."
 rcup -v -d .dotfiles .private-dotfiles
 
 brew bundle
