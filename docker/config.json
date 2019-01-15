@@ -1,0 +1,5 @@
+{
+  "stackOrchestrator" : "swarm",
+  "credSstore" : "osxkeychain"
+}
+
