@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Inspired by https://mths.be/macos and https://github.com/kentcdodds/dotfiles/blob/master/.macos
+
+# Run without downloading:
+# curl https://raw.githubusercontent.com/kentcdodds/dotfiles/master/macos-setup | bash
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+echo "cloning dotfiles"
+git clone git://github.com/sfroehler/dotfiles ~/.dotfiles
+ln -s ~/.dotfiles/laptop.local ~/.laptop.local
+
+echo "Executing thoughtbot laptop script"
+curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+sh mac 2>&1 | tee ~/laptop.log
