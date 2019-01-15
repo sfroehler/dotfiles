@@ -25,8 +25,6 @@ brew "node"
 brew "nvm"
 brew "qt"
 brew "ruby-build"
-brew "rbenv"
-brew "rbenv-default-gems"
 brew "redis", service_restart: true
 brew "ruby-install"
 brew "the_silver_searcher"
