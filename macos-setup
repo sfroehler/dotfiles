@@ -3,7 +3,7 @@
 # Inspired by https://mths.be/macos and https://github.com/kentcdodds/dotfiles/blob/master/.macos
 
 # Run without downloading:
-# curl https://raw.githubusercontent.com/kentcdodds/dotfiles/master/macos-setup | bash
+# curl https://raw.githubusercontent.com/sfroehler/dotfiles/master/macos-setup | bash
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
