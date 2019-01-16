@@ -22,6 +22,12 @@ if [[ ! -d "${HOME}/.dotfiles" ]]; then
   ln -sf ~/.dotfiles/rcrc ~/.rcrc
 fi
 
+# Install oh-my-zsh
+if [[ ! -d "${HOME}/.oh-my-zsh/" ]]; then
+  fancy_echo "Installing oh-my-zsh ..."
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
+
 echo "Executing thoughtbot laptop script"
 curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
 sh mac 2>&1 | tee ~/laptop.log

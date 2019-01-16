@@ -13,11 +13,8 @@ fi
 fancy_echo "Creating dotfiles ..."
 rcup -v -d .dotfiles  -d .private-dotfiles
 
-# Install oh-my-zsh
-fancy_echo "Installing oh-my-zsh ..."
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-fance_echo "brew bundle ..."
+fancy_echo "brew bundle ..."
 brew bundle
 
 
