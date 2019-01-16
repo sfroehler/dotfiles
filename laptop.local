@@ -13,10 +13,17 @@ fi
 fancy_echo "Creating dotfiles ..."
 rcup -v -d .dotfiles  -d .private-dotfiles
 
+# Install oh-my-zsh
+fance_echo "Installing oh-my-zsh ..."
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+fance_echo "brew bundle ..."
 brew bundle
 
+
+
 # install xcode command line tools
-xcode-select --install
+# xcode-select --install
 
 # oh-my-zsh plugins
 if [[ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]]; then
