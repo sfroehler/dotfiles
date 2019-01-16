@@ -15,10 +15,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "cloning dotfiles"
-git clone git://github.com/sfroehler/dotfiles ~/.dotfiles
-ln -sf ~/.dotfiles/laptop.local ~/.laptop.local
-ln -sf ~/.dotfiles/rcrc ~/.rcrc
+if [[ ! -d "${HOME}/.dotfiles" ]]; then
+  echo "Cloning dotfiles ..."
+  git clone git://github.com/sfroehler/dotfiles ~/.dotfiles
+  ln -sf ~/.dotfiles/laptop.local ~/.laptop.local
+  ln -sf ~/.dotfiles/rcrc ~/.rcrc
+fi
 
 echo "Executing thoughtbot laptop script"
 curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
