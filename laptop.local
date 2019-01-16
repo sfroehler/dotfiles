@@ -23,3 +23,26 @@ if [[ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]]; then
   fancy_echo "Installing zsh-syntax-highlighting..."
   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 fi
+
+
+# atom plugins
+apm install atom-beautify autocomplete-ruby
+apm install autocomplete-ruby
+apm install bracket-colorizer
+apm install busy-signal
+apm install highlight-selected
+apm install html2haml
+apm install intentions
+apm install language-haml
+apm install language-markdown
+apm install linter
+apm install linter-haml
+apm install linter-rubocop
+apm install linter-ui-default
+apm install markdown-writer
+apm install minimap
+apm install minimap-cursorline
+apm install minimap-find-and-replace
+apm install minimap-highlight-selected
+apm install rubocop-auto-correct
+apm install sort-lines
