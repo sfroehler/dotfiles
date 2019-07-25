@@ -1,5 +1,8 @@
 "*":
   "atom-beautify":
+    executables:
+      rubocop:
+        path: "bin/rubocop"
     json: {}
   "autocomplete-ruby":
     rsensePath: "~/.asdf/shims/rsense"
@@ -17,6 +20,7 @@
     ]
   editor:
     autoIndentOnPaste: false
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 100
     showIndentGuide: true
@@ -24,6 +28,9 @@
     softWrapHangingIndent: 100
   "exception-reporting":
     userId: "82bed1e2-8d6b-a3d8-f1d6-93a436be63a1"
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   linter:
     lintOnChange: false
   "linter-haml":
