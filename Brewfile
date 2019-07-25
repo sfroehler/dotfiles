@@ -16,7 +16,7 @@ brew "nvm"
 brew "openssl"
 brew "perl"
 brew "puma/puma/puma-dev"
-brew "python"
+brew "python2"
 brew "qt"
 brew "redis", service_restart: true
 brew "ripgrep"

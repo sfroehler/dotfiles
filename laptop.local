@@ -20,7 +20,8 @@ fancy_echo "brew bundle ..."
 brew bundle
 
 # install xcode command line tools
-# xcode-select --install
+xcode-select --install
+sudo xcode-select --switch /Library/Developer/CommandLineTools
 
 # oh-my-zsh plugins
 if [[ ! -d "~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]]; then
